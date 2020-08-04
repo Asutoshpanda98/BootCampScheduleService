@@ -1,0 +1,13 @@
+server.port=9099
+spring.application.name=schedule-program-service
+
+
+#database Configuration(oracle)
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:orcl
+spring.datasource.username=iter
+spring.datasource.password=iter123
+
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=UPDATE
+spring.jpa.properties.dialect=org.hibernate.dialect.OracleDialect

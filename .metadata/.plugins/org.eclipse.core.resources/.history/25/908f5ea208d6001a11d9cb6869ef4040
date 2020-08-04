@@ -1,0 +1,16 @@
+package com.cg.scheduledprogramservice.service;
+
+import java.util.List;
+
+import com.cg.scheduledprogramservice.entity.ScheduleEntity;
+
+public interface ScheduleService {
+	
+	List<ScheduleEntity> getAllSchedules();
+	List<ScheduleEntity> getScheduleById(String id); //return typre doubt
+	boolean addSchedule(ScheduleEntity schedule);
+	boolean updateSchedulebyId(ScheduleEntity schedule);
+	boolean deleteSchedulebyId(String id);
+	
+
+}
