@@ -3,13 +3,16 @@ package com.cg.scheduledprogramservice.entity;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 @Entity
-@Table(name="Schedule_Table")
+@Table(name="Schedule_Table_representation")
 public class ScheduleEntity {
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	private int id;
 	private String name;
 	private String location;
 	private Date startDate;
@@ -19,7 +22,7 @@ public class ScheduleEntity {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public ScheduleEntity(String id, String name, String location, Date startDate, Date endDate, String certificate) {
+	public ScheduleEntity(int id, String name, String location, Date startDate, Date endDate, String certificate) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -28,10 +31,10 @@ public class ScheduleEntity {
 		this.endDate = endDate;
 		this.certificate = certificate;
 	}
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {

@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.cg.scheduledprogramservice.entity.ScheduleEntity;
 
-public interface ScheduleRepository extends CrudRepository<ScheduleEntity, String> {
+public interface ScheduleRepository extends CrudRepository<ScheduleEntity, Integer> {
 
 }
