@@ -1,0 +1,28 @@
+
+<h2>Schedule Details</h2> 
+
+<hr/>
+<div *ngIf="scheduleentity">
+  <div>
+    <label><b>Schedule Id: </b></label> {{scheduleentity.id}}
+  </div>
+  <div>
+    <label><b> Name: </b></label> {{scheduleentity.name}}
+  </div>
+  <div>
+    <label><b>Location </b></label> {{scheduleentity.location}}
+  </div>  
+  <div>
+    <label><b>Start Date</b></label> {{scheduleentity.startDate}}
+  </div>  
+  <div>
+    <label><b>End Date </b></label> {{scheduleentity.location}}
+  </div>  
+  <div>
+    <label><b>Certificate</b></label> {{scheduleentity.certificate}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary" (click)="list()">Back to Employee List</button><br>
